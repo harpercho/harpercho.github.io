@@ -1,8 +1,9 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 249, 255);
   }
   
   h1 {
-    color: navy;
-    margin-left: 20px;
+    color: rgb(69, 9, 65);
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 10px;
   }
