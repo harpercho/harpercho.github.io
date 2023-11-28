@@ -16,13 +16,25 @@ p {
 }
 
 .navigator {
+  margin: auto;
   border-style: double;
   background-color: white;
+  width: 500px;
+  height: 20px;
   text-align: center;
-  color: white;
 }
 
 .audio-player {
   width: 300px;
-  margin: 20px;
+  margin: auto;
+}
+
+.faq {
+  margin: auto;
+  width: 700px;
+}
+
+.intro {
+  margin: auto;
+  width: 700px;
 }
