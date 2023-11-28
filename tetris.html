@@ -289,7 +289,7 @@ document.addEventListener('keydown', function(e) {
     }
   }
 
-  // up arrow key (rotate)
+  // up arrow key (rotate right)
   if (e.which === 38) {
     const matrix = rotate(tetromino.matrix);
     if (isValidMove(matrix, tetromino.row, tetromino.col)) {
@@ -309,6 +309,19 @@ document.addEventListener('keydown', function(e) {
     }
 
     tetromino.row = row;
+  }
+
+  // spacebar (harddrop)
+  if(e.which == 32) {
+    for (let row = 0; row < tetromino.matrix.length; row++){
+      if (!isValidMove(tetromino.matrix, row, tetromino.col)){
+        tetromino.row = row - 1;
+
+        placeTetromino();
+        return;
+    }
+    }
+
   }
 });
 
