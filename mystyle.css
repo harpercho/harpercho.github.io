@@ -7,3 +7,8 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
     margin-left: 10px;
   }
+
+.audio-player {
+  width: 300px;
+  margin: 20px;
+}
